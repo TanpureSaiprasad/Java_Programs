@@ -2,17 +2,13 @@
 addition, subtraction, multiplication and division. 
 Ans=> */
 
-import java.util.*;
 class Cal
 {
     public static void main(String arg[])
     {
         int a,b,c=0;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter number First:");
-        a=sc.nextInt();
-        System.out.println("Enter number Second:");
-        b=sc.nextInt();
+        a=Integer.parseInt(arg[0]);    // convert String value into Integer value Using Wrapper class Integer
+        b=Integer.parseInt(arg[1]);
         c=a+b;
         System.out.println("Additon of Two numbers:"+c);
         c=a-b;
